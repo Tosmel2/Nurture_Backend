@@ -11,6 +11,21 @@ Prerequisites
 - npm or yarn
 - MongoDB (Atlas or local)
 
+## **Summary Table**
+
+| Page | API Endpoint | Method | Auth Required | Purpose |
+|------|--------------|--------|---------------|---------|
+| **SignInPage** | `/api/auth/signin` | POST | No | Login & get token |
+| **SignUpPage** | `/api/auth/signup` | POST | No | Register & get token |
+| **PlansPage** | `/api/plans` | GET | No | Fetch all plans |
+| **SubmitClaimPage** | `/api/claims` | POST | Yes | Submit new claim |
+| **ClaimsListPage** | `/api/claims` | GET | Yes | Fetch user's claims |
+| **ProfilePage** | `/api/users/me` | GET/PATCH | Yes | Get/update profile |
+| **DashboardPage** | `/api/claims` + `/api/users/me` | GET | Yes | Dashboard data |
+| **ProtectedRoute** | `/api/auth/me` | GET | Yes | Verify token validity |
+
+Ready to implement any of these integrations?
+
 Quick start (PowerShell)
 ```powershell
 cd backend
